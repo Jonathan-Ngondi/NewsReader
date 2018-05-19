@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         Log.i("List Size", String.valueOf(newsStories.size()));
-        
+
     }
 
     public class DownloadTask extends AsyncTask<String, Void, String> {
