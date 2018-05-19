@@ -1,6 +1,6 @@
 default: &defaults
   docker:
-    - image: circleci/android:api-26-alpha
+    - image: circleci/android:api-27-alpha
 
   working_directory: ~/repo
 
