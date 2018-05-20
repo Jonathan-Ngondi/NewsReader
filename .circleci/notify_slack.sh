@@ -141,7 +141,7 @@ send_notification() {
           \"fallback\": \"CircleCI build notification and generated files\",
           \"color\": \"good\",
           \"author_name\": \"Branch: $CIRCLE_BRANCH by ${CIRCLE_USERNAME}\",
-          \"author_link\": \"https://github.com/Jonathan-Ngondi/NoteTakingApp/${CIRCLE_BRANCH}\",
+          \"author_link\": \"https://github.com/Jonathan-Ngondi/NewsReader/${CIRCLE_BRANCH}\",
           \"title\": \"${SLACK_TEXT_TITLE}\",
           \"title_link\": \"$CIRCLE_WORKFLOW_URL\",
           \"text\": \"${SLACK_DEPLOYMENT_TEXT}\",
