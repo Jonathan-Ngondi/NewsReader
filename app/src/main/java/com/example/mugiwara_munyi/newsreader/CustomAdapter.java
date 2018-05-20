@@ -14,24 +14,41 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
+/**Custom Adapter for the RecyclerView.
+ *
+ */
+
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
 
     List<NewsItem> mList;
     Context mContext;
 
-    public CustomAdapter(List<NewsItem> mList, Context mContext) {
+  /**Constructor for the Custom Adapter.
+   *
+   * @param mList takes in a List of News Items.
+   * @param mContext also requires the application Context for Glide.
+   */
+
+  public CustomAdapter(List<NewsItem> mList, Context mContext) {
         this.mContext = mContext;
         this.mList = mList;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+  /**ViewHolder for the CustomAdapter implements OnClickListener.
+   *
+   */
+
+  public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ImageView image;
         TextView title;
 
+    /**Constructor for the ViewHolder.
+     * @param itemView takes in a View to hold and binds both the image and title to it.
+     */
 
-        public MyViewHolder(View itemView) {
+    public MyViewHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             image = itemView.findViewById(R.id.newsImage);
@@ -43,7 +60,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         @Override
         public void onClick(View v) {
-
+          //This method is empty for now.
         }
     }
 
