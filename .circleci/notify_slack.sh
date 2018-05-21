@@ -135,7 +135,7 @@ send_notification() {
 
   curl -X POST --data-urlencode \
   "payload={
-      \"channel\": \"my-build-notices\",
+      \"channel\": \"${DEPLOYMENT_CHANNEL}\",
       \"username\": \"DeployNotification\",
       \"attachments\": [{
           \"fallback\": \"CircleCI build notification and generated files\",
@@ -148,7 +148,7 @@ send_notification() {
           \"actions\": [${CIRCLE_ARTIFACTS_BUTTON}]
       }]
   }" \
-  "https://hooks.slack.com/services/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"
+  "${SLACK_CHANNEL_HOOK}"
 }
 
 main() {
