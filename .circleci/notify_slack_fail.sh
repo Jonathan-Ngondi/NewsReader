@@ -9,6 +9,8 @@ declare_env_variables() {
   #
   # Some environment variables assigned externally are:
   #
+  # Important to note that these variables should be set in the Circle CI Environment Variable Setting.
+  #
   # CIRCLE_TOKEN : This is the API token that is provided for the CircleCI user. Used for accessing artifacts
   # SLACK_CHANNEL_HOOK : This is the webhook for the Slack App where notifications will be sent from
   # DEPLOYMENT_CHANNEL : This is the channel on which the Slack notifications will be posted
